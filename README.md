@@ -6,7 +6,8 @@ yum -y install https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-7-x8
 yum -y install pgadmin4
 
 mv /etc/httpd/conf.d/pgadmin4.conf.sample /etc/httpd/conf.d/pgadmin4.conf
- vi /etc/httpd/conf.d/pgadmin4.conf
+
+vi /etc/httpd/conf.d/pgadmin4.conf
 
 ```
 <VirtualHost *:80>
