@@ -6,7 +6,7 @@ yum -y install https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-7-x8
 yum -y install pgadmin4
 
 mv /etc/httpd/conf.d/pgadmin4.conf.sample /etc/httpd/conf.d/pgadmin4.conf
-# vi /etc/httpd/conf.d/pgadmin4.conf
+ vi /etc/httpd/conf.d/pgadmin4.conf
 
 ```
 <VirtualHost *:80>
@@ -36,10 +36,10 @@ WSGIScriptAlias /pgadmin4 /usr/lib/python3.6/site-packages/pgadmin4-web/pgAdmin4
 
 ```
 
-# mkdir -p /var/lib/pgadmin4/
-# mkdir -p /var/log/pgadmin4/
-# chown -R apache:apache /var/lib/pgadmin4
-# chown -R apache:apache /var/log/pgadmin4
+ mkdir -p /var/lib/pgadmin4/
+ mkdir -p /var/log/pgadmin4/
+ chown -R apache:apache /var/lib/pgadmin4
+ chown -R apache:apache /var/log/pgadmin4
 
 
 
