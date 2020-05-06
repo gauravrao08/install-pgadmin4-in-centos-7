@@ -45,17 +45,18 @@ WSGIScriptAlias /pgadmin4 /usr/lib/python3.6/site-packages/pgadmin4-web/pgAdmin4
 
 
 vim /usr/lib/python3.6/site-packages/pgadmin4-web/config_distro.py
-
+```
 LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
 SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
 SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
 STORAGE_DIR = '/var/lib/pgadmin4/storage'
-
+```
 python /usr/lib/python3.6/site-packages/pgadmin4-web/setup.py
 
 
 NOTE: if getting error then
-
+```
 yum install python-psycopg2
 yum -y install python-pip
 yum -y install pgadmin4
+```
