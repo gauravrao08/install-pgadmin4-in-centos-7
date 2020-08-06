@@ -1,9 +1,9 @@
 <VirtualHost *:80>
     DocumentRoot /usr/share/phpMyAdmin/
-    ServerName honda-phpmyadmin.gaadi.com
-    ServerAlias www.honda-phpmyadmin.gaadi.com
-    ErrorLog /var/log/httpd/honda-phpmyadmin.gaadi.com-error_log
-    CustomLog /var/log/httpd/honda-phpmyadmin.gaadi.com-access_log common
+    ServerName domain.com
+    ServerAlias www.domain.com
+    ErrorLog /var/log/httpd/domain.com-error_log
+    CustomLog /var/log/httpd/domain.com-access_log common
 
 <Directory /usr/share/phpMyAdmin/>
         Options Indexes FollowSymLinks Includes ExecCGI
@@ -14,7 +14,6 @@
          AddDefaultCharset UTF-8
    <IfModule mod_authz_core.c>
      # Apache 2.4
-#	Require ip 119.82.0.0/16    
      <RequireAll>
        Require env AllowIP
       </RequireAll>
